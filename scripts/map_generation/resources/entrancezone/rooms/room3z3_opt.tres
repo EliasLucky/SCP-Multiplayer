@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RoomModel" format=3 uid="uid://de04ihm4ouknu"]
+
+[ext_resource type="Script" uid="uid://b7aal61pge44u" path="res://scripts/item_data.gd" id="1_mdoxy"]
+[ext_resource type="PackedScene" uid="uid://dlkie7hcdnd7x" path="res://models/rooms/entrancezone/room3z3_opt.tscn" id="2_gh7pq"]
+[ext_resource type="Script" uid="uid://c80w7fc5sggmr" path="res://scripts/map_generation/room_model.gd" id="3_ljg3l"]
+[ext_resource type="Script" uid="uid://bpokrsvfxavuh" path="res://scripts/team_manager/team_spawn.gd" id="4_wwtnl"]
+
+[resource]
+script = ExtResource("3_ljg3l")
+model = ExtResource("2_gh7pq")

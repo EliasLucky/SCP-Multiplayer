@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bxa4tsrgcq8ab"]
+
+[ext_resource type="Texture2D" uid="uid://dmyjvgh2b0pt5" path="res://materials/textures/TileFloor_Diffuse.png" id="1_pi6s3"]
+[ext_resource type="Texture2D" uid="uid://5akya88md4ek" path="res://materials/textures/TileFloor_Normal.jpg" id="2_344oh"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_pi6s3")
+normal_enabled = true
+normal_scale = 1.5
+normal_texture = ExtResource("2_344oh")

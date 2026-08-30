@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bm0xoh2pxj5k3"]
+
+[ext_resource type="PackedScene" uid="uid://bcdanp31mo26d" path="res://models/shelf.fbx" id="1_nuojw"]
+
+[node name="shelf" unique_id=214929637 instance=ExtResource("1_nuojw")]

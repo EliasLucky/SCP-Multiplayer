@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c1qqwi5ffn2fv"]
+
+[ext_resource type="Script" uid="uid://d07ng22j61l1" path="res://scripts/character/footsteep.gd" id="2_feeiu"]
+[ext_resource type="Script" uid="uid://bg2eetqg34xp" path="res://scripts/character/player.gd" id="14_o1f4g"]
+
+[sub_resource type="CapsuleShape3D" id="58"]
+
+[node name="character" type="CharacterBody3D" unique_id=1035130765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+script = ExtResource("14_o1f4g")
+
+[node name="head" type="RayCast3D" parent="." unique_id=822835807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="neck" type="Node3D" parent="head" unique_id=1345035820]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0, 0)
+
+[node name="camera" type="Camera3D" parent="head/neck" unique_id=541188389]
+
+[node name="feet" type="RayCast3D" parent="." unique_id=1722411209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="audios" type="Node3D" parent="." unique_id=1008367184]
+
+[node name="footsteep" type="Node3D" parent="audios" unique_id=1734281947]
+script = ExtResource("2_feeiu")
+
+[node name="metal" type="Node3D" parent="audios/footsteep" unique_id=752678190 groups=["metal"]]
+
+[node name="grass" type="Node3D" parent="audios/footsteep" unique_id=1968490162 groups=["metal"]]
+
+[node name="0" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=2025921795]
+
+[node name="1" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=516952270]
+
+[node name="2" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=791846275]
+
+[node name="3" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=2109879956]
+
+[node name="4" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=1894171262]
+
+[node name="5" type="AudioStreamPlayer3D" parent="audios/footsteep/grass" unique_id=1851650289]
+
+[node name="concrete" type="Node3D" parent="audios/footsteep" unique_id=1068506526 groups=["default"]]
+
+[node name="0" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=858509378]
+
+[node name="1" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=351277389]
+
+[node name="2" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=131793023]
+
+[node name="3" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=649234583]
+
+[node name="4" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=473344276]
+
+[node name="5" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=1759172642]
+
+[node name="6" type="AudioStreamPlayer3D" parent="audios/footsteep/concrete" unique_id=205576881]
+
+[node name="collision" type="CollisionShape3D" parent="." unique_id=1445733181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("58")

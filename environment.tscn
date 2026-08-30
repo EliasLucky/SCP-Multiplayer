@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b128v4jb8hwne"]
+
+[sub_resource type="Sky" id="1"]
+
+[sub_resource type="Environment" id="2"]
+background_mode = 2
+sky = SubResource("1")
+tonemap_mode = 2
+ssao_enabled = true
+ssao_intensity = 6.0
+glow_enabled = true
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/4 = 1.0
+glow_levels/6 = 1.0
+glow_levels/7 = 1.0
+glow_blend_mode = 1
+fog_enabled = true
+adjustment_enabled = true
+
+[node name="environment" type="WorldEnvironment"]
+environment = SubResource("2")

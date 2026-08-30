@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cueue7mwvwghx"]
+
+[ext_resource type="Texture2D" uid="uid://dr4q3clovx8ex" path="res://materials/textures/MetalPanel2_Diffuse.png" id="1_gaay8"]
+
+[resource]
+albedo_texture = ExtResource("1_gaay8")
+metallic = 0.2
+normal_enabled = true

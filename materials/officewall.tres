@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cyfewcr087x4f"]
+
+[ext_resource type="Texture2D" uid="uid://c66vogb3qkp3p" path="res://materials/textures/OfficeWall_BaseColor.png" id="1_hmkwj"]
+[ext_resource type="Texture2D" uid="uid://qar6h3jkfr8l" path="res://materials/textures/OfficeWall_Normal.png" id="2_x8o7h"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_hmkwj")
+normal_enabled = true
+normal_texture = ExtResource("2_x8o7h")

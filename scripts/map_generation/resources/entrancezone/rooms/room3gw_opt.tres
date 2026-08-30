@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RoomModel" format=3 uid="uid://45c16edw4wso"]
+
+[ext_resource type="Script" uid="uid://b7aal61pge44u" path="res://scripts/item_data.gd" id="1_vtm83"]
+[ext_resource type="PackedScene" uid="uid://hrsfbva384pg" path="res://models/rooms/entrancezone/room3gw_opt.tscn" id="2_mjebw"]
+[ext_resource type="Script" uid="uid://c80w7fc5sggmr" path="res://scripts/map_generation/room_model.gd" id="3_g7l2u"]
+[ext_resource type="Script" uid="uid://bpokrsvfxavuh" path="res://scripts/team_manager/team_spawn.gd" id="4_vw4xr"]
+
+[resource]
+script = ExtResource("3_g7l2u")
+model = ExtResource("2_mjebw")
+has_spawn_limit = true
+max_spawn_amount = 3

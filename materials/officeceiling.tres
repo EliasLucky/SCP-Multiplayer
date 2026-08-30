@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://mrckxk7u32ql"]
+
+[ext_resource type="Texture2D" uid="uid://48tvjg4xtpwp" path="res://materials/textures/OfficeCeiling_Diffuse.png" id="1_c0d6s"]
+[ext_resource type="Texture2D" uid="uid://dbadasjpdcx3d" path="res://materials/textures/OfficeCeiling_Normal.png" id="2_ao7dg"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_c0d6s")
+normal_enabled = true
+normal_texture = ExtResource("2_ao7dg")

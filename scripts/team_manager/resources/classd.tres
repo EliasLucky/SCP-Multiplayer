@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Team" format=3 uid="uid://co6vy7ywlhhcc"]
+
+[ext_resource type="Script" uid="uid://boxa8roeiddpp" path="res://scripts/ability.gd" id="1_mdu5x"]
+[ext_resource type="Script" uid="uid://ctnj7wkl8bid5" path="res://scripts/team_manager/team_class.gd" id="2_h0okf"]
+[ext_resource type="Script" uid="uid://b72rylwwv8tij" path="res://scripts/team_manager/team.gd" id="3_kwj1x"]
+[ext_resource type="Script" uid="uid://b7aal61pge44u" path="res://scripts/item_data.gd" id="4_pwuep"]
+[ext_resource type="Script" uid="uid://daydd8fgncom3" path="res://scripts/team_manager/progression_rank.gd" id="5_twivg"]
+
+[resource]
+script = ExtResource("3_kwj1x")
+team_id = 4
+team_name = "Class - D"
+team_direction_one = "Escape from the facility."
+team_direction_two = "Cooperate with the [color=#00aaaa]Chaos Insurgency[/color]]"
+team_direction_three = "Avoid other teams."
+hud = "hud_class_d"
+escapee = true
+count_escape_as_classd = true
+initial_spawn_enabled = true

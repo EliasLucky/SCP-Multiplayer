@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://cgpkt5mcic55i"]
+
+[ext_resource type="PackedScene" uid="uid://bbwkp0l23pq15" path="res://models/rooms/room2z3_opt4.fbx" id="1_kyqwh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_piovs"]
+
+[sub_resource type="Sky" id="7"]
+sky_material = SubResource("ProceduralSkyMaterial_piovs")
+
+[sub_resource type="Environment" id="Environment_504pi"]
+background_mode = 2
+background_energy_multiplier = 0.0
+sky = SubResource("7")
+tonemap_mode = 2
+ssao_enabled = true
+ssao_intensity = 6.0
+glow_blend_mode = 1
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.0119747, 0.0144936, 0.0190329, 1)
+fog_density = 1.0
+fog_height = 2.0
+adjustment_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kq6hg"]
+size = Vector3(14.8, 1, 14.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_asemf"]
+size = Vector3(1, 3, 14.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hi7e7"]
+size = Vector3(2, 1, 14.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wmv6a"]
+size = Vector3(2, 1, 3.74)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ypk3v"]
+size = Vector3(2, 1, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ai62j"]
+size = Vector3(1, 3, 0.24)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_orut6"]
+size = Vector3(1, 3, 0.24)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r5e7k"]
+size = Vector3(1.4, 1, 0.24)
+
+[node name="room2z3_opt4" instance=ExtResource("1_kyqwh")]
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.55, -3.708)
+light_energy = 0.6
+distance_fade_enabled = true
+spot_angle = 50.0
+
+[node name="SpotLight3D7" type="SpotLight3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.55, 3.708)
+light_energy = 0.6
+distance_fade_enabled = true
+spot_angle = 50.0
+
+[node name="sun" type="DirectionalLight3D" parent="." index="3"]
+transform = Transform3D(0.707107, 0.612372, -0.353553, 0, 0.5, 0.866025, 0.707107, -0.612373, 0.353553, 0, 0, 0)
+visible = false
+light_color = Color(0.976471, 0.959804, 0.85098, 1)
+light_energy = 0.0
+shadow_enabled = true
+directional_shadow_blend_splits = true
+
+[node name="environment" type="WorldEnvironment" parent="." index="4"]
+environment = SubResource("Environment_504pi")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+visible = false
+light_color = Color(1, 0.976471, 0.960784, 1)
+light_energy = 0.2
+light_size = 5.0
+omni_range = 12.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="6"]
+
+[node name="floor" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_kq6hg")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.12, 1.5, 0)
+shape = SubResource("BoxShape3D_asemf")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 3.28, 0)
+shape = SubResource("BoxShape3D_hi7e7")
+
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="StaticBody3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28, 3.09)
+shape = SubResource("BoxShape3D_wmv6a")
+
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="StaticBody3D" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28, -3.09)
+shape = SubResource("BoxShape3D_wmv6a")
+
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="StaticBody3D" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28, -6.73)
+shape = SubResource("BoxShape3D_ypk3v")
+
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="StaticBody3D" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28, 6.73)
+shape = SubResource("BoxShape3D_ypk3v")
+
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="StaticBody3D" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 3.28, 0)
+shape = SubResource("BoxShape3D_hi7e7")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.12, 1.5, -1.39)
+shape = SubResource("BoxShape3D_asemf")
+
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="StaticBody3D" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12, 1.5, 0)
+shape = SubResource("BoxShape3D_asemf")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="." index="7"]
+
+[node name="doorframe7" type="CollisionShape3D" parent="StaticBody3D4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.195, 1.5, -7.31)
+shape = SubResource("BoxShape3D_ai62j")
+
+[node name="doorframe8" type="CollisionShape3D" parent="StaticBody3D4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195, 1.5, -7.31)
+shape = SubResource("BoxShape3D_orut6")
+
+[node name="doorframe9" type="CollisionShape3D" parent="StaticBody3D4" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.82, -7.31)
+shape = SubResource("BoxShape3D_r5e7k")
+
+[node name="doorframe10" type="CollisionShape3D" parent="StaticBody3D4" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.195, 1.5, 7.31)
+shape = SubResource("BoxShape3D_ai62j")
+
+[node name="doorframe11" type="CollisionShape3D" parent="StaticBody3D4" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195, 1.5, 7.31)
+shape = SubResource("BoxShape3D_orut6")
+
+[node name="doorframe12" type="CollisionShape3D" parent="StaticBody3D4" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.82, 7.31)
+shape = SubResource("BoxShape3D_r5e7k")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3.5)
+light_color = Color(1, 0.976471, 0.960784, 1)
+light_energy = 0.2
+light_size = 5.0
+distance_fade_enabled = true
+omni_attenuation = 1.5
+omni_shadow_mode = 0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -3.5)
+light_color = Color(1, 0.976471, 0.960784, 1)
+light_energy = 0.2
+light_size = 5.0
+distance_fade_enabled = true
+omni_attenuation = 1.5
+omni_shadow_mode = 0

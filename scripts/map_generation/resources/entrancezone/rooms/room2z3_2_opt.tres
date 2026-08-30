@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="RoomModel" format=3 uid="uid://bwi5f6xvsjo44"]
+
+[ext_resource type="Script" uid="uid://b7aal61pge44u" path="res://scripts/item_data.gd" id="1_jh0vj"]
+[ext_resource type="PackedScene" uid="uid://c1r8r7jvovw6l" path="res://models/rooms/entrancezone/room2z3_2_opt.tscn" id="2_a81js"]
+[ext_resource type="Script" uid="uid://c80w7fc5sggmr" path="res://scripts/map_generation/room_model.gd" id="3_3po0l"]
+[ext_resource type="Script" uid="uid://bpokrsvfxavuh" path="res://scripts/team_manager/team_spawn.gd" id="4_5ouwr"]
+[ext_resource type="Resource" uid="uid://co6vy7ywlhhcc" path="res://scripts/team_manager/resources/classd.tres" id="5_6qevb"]
+
+[sub_resource type="Resource" id="Resource_1syfb"]
+script = ExtResource("4_5ouwr")
+team = ExtResource("5_6qevb")
+position = Vector3(0, 2, 0)
+metadata/_custom_type_script = "uid://bpokrsvfxavuh"
+
+[resource]
+script = ExtResource("3_3po0l")
+model = ExtResource("2_a81js")
+team_spawn = Array[ExtResource("4_5ouwr")]([SubResource("Resource_1syfb")])

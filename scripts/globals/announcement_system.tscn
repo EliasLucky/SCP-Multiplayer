@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://otj6ruaa61jy"]
+
+[ext_resource type="Script" uid="uid://byap5lvjs4sb" path="res://scripts/globals/announcement_system.gd" id="1_8hicb"]
+
+[node name="AnnouncementSystem" type="Node" unique_id=1665026537 node_paths=PackedStringArray("announcement_sound_player", "warhead_announcement_sound_player")]
+script = ExtResource("1_8hicb")
+announcement_sound_player = NodePath("announcement_sound_player")
+warhead_announcement_sound_player = NodePath("warhead_announcement_sound_player")
+
+[node name="announcement_sound_player" type="AudioStreamPlayer3D" parent="." unique_id=900382901]
+
+[node name="warhead_announcement_sound_player" type="AudioStreamPlayer3D" parent="." unique_id=1734583445]

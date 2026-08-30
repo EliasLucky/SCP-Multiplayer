@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://mkrl23qc3hnl"]
+
+[ext_resource type="Texture2D" uid="uid://dwdk85wvo8ei4" path="res://materials/textures/pitted-metal_albedo.png" id="1_bkn3u"]
+[ext_resource type="Texture2D" uid="uid://diwvgtibagipe" path="res://materials/textures/pitted-metal_normal-ogl.png" id="2_uag0x"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_bkn3u")
+metallic = 0.2
+roughness = 0.8
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("2_uag0x")

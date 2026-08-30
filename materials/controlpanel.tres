@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://88fkrqqk7ufo"]
+
+[ext_resource type="Texture2D" uid="uid://dq5eumfupslcg" path="res://materials/textures/ControlPanel_Diffuse.png" id="1_0c6uv"]
+[ext_resource type="Texture2D" uid="uid://cvkrh4rw4c1hm" path="res://materials/textures/ControlPanel_Emission.png" id="2_e2e06"]
+[ext_resource type="Texture2D" uid="uid://cgafv5tbujkuj" path="res://materials/textures/ControlPanel_Normal.png" id="3_qae86"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_0c6uv")
+emission_enabled = true
+emission_energy_multiplier = 10.0
+emission_texture = ExtResource("2_e2e06")
+normal_enabled = true
+normal_texture = ExtResource("3_qae86")

@@ -1,0 +1,132 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c0i7tg81lr05u"
+path="res://.godot/imported/room3gw_opt.fbx-6982c0c8190944f1bc1622bed955c6f6.scn"
+
+[deps]
+
+source_file="res://models/rooms/entrancezone/room3gw_opt.fbx"
+dest_files=["res://.godot/imported/room3gw_opt.fbx-6982c0c8190944f1bc1622bed955c6f6.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"Material.001": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/miscmetal.tres",
+"use_external/path": "uid://djcc11bh23to1"
+},
+"Material.002": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/miscmetal.tres",
+"use_external/path": "uid://djcc11bh23to1"
+},
+"Material.003": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/miscmetal.tres",
+"use_external/path": "uid://djcc11bh23to1"
+},
+"Material.004": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/miscmetal.tres",
+"use_external/path": "uid://djcc11bh23to1"
+},
+"Material.005": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/miscmetal.tres",
+"use_external/path": "uid://djcc11bh23to1"
+},
+"drawnmesh13": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res:/models/controlpanel.tres"
+},
+"drawnmesh14": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res:/models/vent.tres"
+},
+"drawnmesh19": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/officewall.tres",
+"use_external/path": "uid://cyfewcr087x4f"
+},
+"drawnmesh20": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/officewall.tres",
+"use_external/path": "uid://cyfewcr087x4f"
+},
+"drawnmesh21": {
+"use_external/enabled": false,
+"use_external/fallback_path": "",
+"use_external/path": "res://models/white.tres"
+},
+"drawnmesh23": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/vent.tres",
+"use_external/path": "uid://dbbg7ok48bsm0"
+},
+"drawnmesh24": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/metal.tres",
+"use_external/path": "uid://c2656fldommd4"
+},
+"drawnmesh26": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/controlpanel.tres",
+"use_external/path": "uid://88fkrqqk7ufo"
+},
+"drawnmesh4": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/lamp.tres",
+"use_external/path": "uid://cboogx75n4hu5"
+},
+"drawnmesh5": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/tilefloor.tres",
+"use_external/path": "uid://bxa4tsrgcq8ab"
+},
+"drawnmesh6": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res://models/white.tres"
+},
+"drawnmesh8": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/metal.tres",
+"use_external/path": "uid://c2656fldommd4"
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

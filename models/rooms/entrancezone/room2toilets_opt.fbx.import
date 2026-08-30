@@ -1,0 +1,77 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bwvhsujow70m1"
+path="res://.godot/imported/room2toilets_opt.fbx-a40a963acabb5f54d7c9a81502f61e10.scn"
+
+[deps]
+
+source_file="res://models/rooms/entrancezone/room2toilets_opt.fbx"
+dest_files=["res://.godot/imported/room2toilets_opt.fbx-a40a963acabb5f54d7c9a81502f61e10.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"drawnmesh0": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/whitewall.tres",
+"use_external/path": "uid://bpnil6i6jat6g"
+},
+"drawnmesh2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/tilefloor.tres",
+"use_external/path": "uid://bxa4tsrgcq8ab"
+},
+"drawnmesh3": {
+"use_external/enabled": false,
+"use_external/fallback_path": "",
+"use_external/path": "res://"
+},
+"drawnmesh4": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://models/officewall.tres",
+"use_external/path": "uid://cyfewcr087x4f"
+},
+"drawnmesh5": {
+"use_external/enabled": false,
+"use_external/fallback_path": "",
+"use_external/path": "res://models/white.tres"
+},
+"drawnmesh6": {
+"use_external/enabled": false,
+"use_external/fallback_path": "",
+"use_external/path": ""
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

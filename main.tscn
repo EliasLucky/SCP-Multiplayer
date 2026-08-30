@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://g8615i0dvoc4"]
+
+[ext_resource type="PackedScene" uid="uid://c1qqwi5ffn2fv" path="res://scripts/character/character.tscn" id="1_efxa6"]
+[ext_resource type="Script" uid="uid://cao2yqy2lfen6" path="res://scripts/map_generation/map_generation.gd" id="2_1bvp3"]
+[ext_resource type="Resource" uid="uid://boeassbw6nqy" path="res://scripts/round_system/default_round_settings.tres" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://cydy8tmv7lhaf" path="res://scripts/round_system/round_system.gd" id="8_300pu"]
+
+[sub_resource type="BoxMesh" id="5"]
+size = Vector3(500, 2, 500)
+
+[sub_resource type="BoxShape3D" id="6"]
+size = Vector3(500, 2, 500)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o8ak8"]
+
+[sub_resource type="Sky" id="Sky_5p1pn"]
+sky_material = SubResource("ProceduralSkyMaterial_o8ak8")
+
+[sub_resource type="Environment" id="Environment_ubhws"]
+background_energy_multiplier = 0.0
+sky = SubResource("Sky_5p1pn")
+tonemap_mode = 2
+tonemap_white = 1.08
+ssao_enabled = true
+ssao_intensity = 6.0
+glow_enabled = true
+glow_normalized = true
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.0117647, 0.0156863, 0.0392157, 1)
+fog_density = 1.0
+fog_height = 2.0
+fog_depth_begin = 0.0
+fog_depth_end = 29.6
+adjustment_enabled = true
+adjustment_contrast = 1.05
+
+[node name="main" type="Node" unique_id=442402854]
+
+[node name="base" type="Node3D" parent="." unique_id=1649423312]
+
+[node name="terrain" type="StaticBody3D" parent="base" unique_id=377921627 groups=["concrete"]]
+
+[node name="mesh" type="MeshInstance3D" parent="base/terrain" unique_id=1658698248]
+mesh = SubResource("5")
+
+[node name="collision" type="CollisionShape3D" parent="base/terrain" unique_id=341955580]
+shape = SubResource("6")
+
+[node name="world" type="Node3D" parent="." unique_id=649692207]
+
+[node name="player_spawn_point" type="Node3D" parent="world" unique_id=1179632733]
+
+[node name="character" parent="world/player_spawn_point" unique_id=1035130765 instance=ExtResource("1_efxa6")]
+
+[node name="map_spawn_point" type="Node3D" parent="world" unique_id=1931904270]
+script = ExtResource("2_1bvp3")
+
+[node name="round_manager" type="Node" parent="." unique_id=589654877 node_paths=PackedStringArray("map_generator", "test_player")]
+script = ExtResource("8_300pu")
+default_round_settings = ExtResource("3_h2yge")
+map_generator = NodePath("../world/map_spawn_point")
+test_player = NodePath("../world/player_spawn_point/character")
+
+[node name="post_processing" type="Node3D" parent="." unique_id=1846752607]
+
+[node name="environment" type="WorldEnvironment" parent="post_processing" unique_id=1821278396]
+environment = SubResource("Environment_ubhws")
+
+[node name="sun" type="DirectionalLight3D" parent="post_processing" unique_id=1702730674]
+transform = Transform3D(0.7071068, 0.61237246, -0.35355338, 0, 0.5, 0.86602545, 0.7071068, -0.6123725, 0.35355338, 0, 0, 0)
+light_color = Color(0.976471, 0.959804, 0.85098, 1)
+light_energy = 0.0
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true

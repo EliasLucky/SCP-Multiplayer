@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ContainmentZone" format=3 uid="uid://48tyuirq2tjs"]
+
+[ext_resource type="Script" uid="uid://eh7ix4a1psf8" path="res://scripts/map_generation/checkpoint_room_model.gd" id="1_qpqyp"]
+[ext_resource type="Script" uid="uid://c80w7fc5sggmr" path="res://scripts/map_generation/room_model.gd" id="2_eclr1"]
+[ext_resource type="Script" uid="uid://dmfhf4vvou3fm" path="res://scripts/map_generation/doorframe_model.gd" id="3_of6tg"]
+[ext_resource type="Resource" uid="uid://r8bxlkjy11qg" path="res://scripts/map_generation/resources/entrancezone/rooms/gateaentrance_opt.tres" id="3_xouqd"]
+[ext_resource type="Resource" uid="uid://cugem5um42yaf" path="res://scripts/map_generation/resources/entrancezone/rooms/medibay_opt.tres" id="4_xouqd"]
+[ext_resource type="Resource" uid="uid://g7exdhb736jo" path="res://scripts/map_generation/resources/entrancezone/rooms/room2toilets_opt.tres" id="5_jk67u"]
+[ext_resource type="Resource" uid="uid://b3dyidsmgs750" path="res://scripts/map_generation/resources/entrancezone/rooms/room4z3_opt.tres" id="6_fv0jc"]
+[ext_resource type="Resource" uid="uid://bwi5f6xvsjo44" path="res://scripts/map_generation/resources/entrancezone/rooms/room2z3_2_opt.tres" id="7_jk67u"]
+[ext_resource type="Script" uid="uid://dbgpwd32huqwg" path="res://scripts/map_generation/containmentzone.gd" id="7_ytm2l"]
+[ext_resource type="Resource" uid="uid://de04ihm4ouknu" path="res://scripts/map_generation/resources/entrancezone/rooms/room3z3_opt.tres" id="8_2ht6w"]
+[ext_resource type="Resource" uid="uid://45c16edw4wso" path="res://scripts/map_generation/resources/entrancezone/rooms/room3gw_opt.tres" id="9_c6sor"]
+[ext_resource type="Resource" uid="uid://d04m8asiev0rv" path="res://scripts/map_generation/resources/entrancezone/rooms/room3offices.tres" id="10_vvucf"]
+[ext_resource type="Resource" uid="uid://bl0id6msvrbxi" path="res://scripts/map_generation/resources/entrancezone/rooms/room2Cz3_opt.tres" id="13_fv0jc"]
+
+[resource]
+script = ExtResource("7_ytm2l")
+zone_id = 3
+zone_name = "Entrance Zone"
+grid_width = 9
+grid_height = 9
+dead_ends = Array[ExtResource("2_eclr1")]([ExtResource("3_xouqd")])
+hallways = Array[ExtResource("2_eclr1")]([ExtResource("4_xouqd"), ExtResource("5_jk67u"), ExtResource("7_jk67u")])
+turns = Array[ExtResource("2_eclr1")]([ExtResource("13_fv0jc")])
+t_intersections = Array[ExtResource("2_eclr1")]([ExtResource("8_2ht6w"), ExtResource("9_c6sor"), ExtResource("10_vvucf"), ExtResource("10_vvucf")])
+intersections = Array[ExtResource("2_eclr1")]([ExtResource("6_fv0jc")])

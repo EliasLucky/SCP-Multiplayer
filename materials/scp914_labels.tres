@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bssg8yhvvdy0f"]
+
+[ext_resource type="Texture2D" uid="uid://bd5oatfnyk67u" path="res://materials/textures/914labels.jpg" id="1_rfsyx"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_rfsyx")

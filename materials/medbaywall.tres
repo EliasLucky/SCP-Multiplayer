@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://guw70dsjis0j"]
+
+[ext_resource type="Texture2D" uid="uid://bcnpdi5f46mbb" path="res://materials/textures/MedBay_BaseColor.png" id="1_sdlta"]
+[ext_resource type="Texture2D" uid="uid://k1ynxrqbbpfs" path="res://materials/textures/MedBay_Normal.png" id="2_ochxh"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_sdlta")
+normal_enabled = true
+normal_texture = ExtResource("2_ochxh")

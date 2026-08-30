@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c4rrsle2hjs72"]
+
+[node name="door3" unique_id=578629468]
+
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(1495820829) index="0" unique_id=341147743]
+bones/2/position = Vector3(0.82304454, 0, 0.5)
+bones/4/position = Vector3(-0.84788525, 0, 0.5)

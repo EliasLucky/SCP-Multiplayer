@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cgy8ga10okmqq"]
+
+[ext_resource type="Texture2D" uid="uid://dyj0yxqm3313b" path="res://materials/textures/dull_metal_albedo.png" id="1_iavjr"]
+[ext_resource type="Texture2D" uid="uid://bti4sky6r5cna" path="res://materials/textures/dull_metal_roughness.png" id="2_6p1qq"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_iavjr")
+roughness_texture = ExtResource("2_6p1qq")

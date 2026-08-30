@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cboogx75n4hu5"]
+
+[ext_resource type="Texture2D" uid="uid://dhdpicpdni1qt" path="res://materials/textures/2_office_lamps_dif.jpg" id="1_d632e"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_d632e")

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://be1o1ow101q6n"]
+
+[ext_resource type="Script" uid="uid://bfpybcggo71cr" path="res://scripts/globals/global_timers.gd" id="1_moeen"]
+
+[node name="Node" type="Node" unique_id=1525173336 node_paths=PackedStringArray("spawnwave_timer", "lcz_decontamination_timer", "hcz_decontamination_timer", "lcz_prevent_stalling_timer", "omega_warhead_detonation_timer", "alpha_warhead_detonation_timer")]
+script = ExtResource("1_moeen")
+spawnwave_timer = NodePath("spawnwave")
+lcz_decontamination_timer = NodePath("lcz_decontamination")
+hcz_decontamination_timer = NodePath("hcz_decontamination")
+lcz_prevent_stalling_timer = NodePath("lcz_prevent_stalling")
+omega_warhead_detonation_timer = NodePath("omega_warhead")
+alpha_warhead_detonation_timer = NodePath("alpha_warheads")
+
+[node name="spawnwave" type="Timer" parent="." unique_id=1369736215]
+
+[node name="lcz_decontamination" type="Timer" parent="." unique_id=89045283]
+
+[node name="hcz_decontamination" type="Timer" parent="." unique_id=489858873]
+
+[node name="lcz_prevent_stalling" type="Timer" parent="." unique_id=1988282324]
+
+[node name="omega_warhead" type="Timer" parent="." unique_id=1927913241]
+
+[node name="alpha_warheads" type="Timer" parent="." unique_id=611710215]

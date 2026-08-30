@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpnil6i6jat6g"]
+
+[ext_resource type="Texture2D" uid="uid://kwdowmhsji8m" path="res://materials/textures/WhiteWall_Diffuse.png" id="1_dns1p"]
+[ext_resource type="Texture2D" uid="uid://dvxif802xsoa0" path="res://materials/textures/WhiteWall_Metallic.png" id="2_dvnpn"]
+[ext_resource type="Texture2D" uid="uid://dfivh17ow3dwn" path="res://materials/textures/WhiteWall_Normal.png" id="3_3qxy5"]
+[ext_resource type="Texture2D" uid="uid://8l2cqo8d6gwp" path="res://materials/textures/WhiteWall_Roughness.png" id="4_gqhuq"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_dns1p")
+metallic_specular = 0.2
+metallic_texture = ExtResource("2_dvnpn")
+roughness_texture = ExtResource("4_gqhuq")
+normal_enabled = true
+normal_texture = ExtResource("3_3qxy5")

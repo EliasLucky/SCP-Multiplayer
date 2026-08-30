@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RoundSettings" format=3 uid="uid://boeassbw6nqy"]
+
+[ext_resource type="Script" uid="uid://dbgpwd32huqwg" path="res://scripts/map_generation/containmentzone.gd" id="1_abspu"]
+[ext_resource type="Resource" uid="uid://48tyuirq2tjs" path="res://scripts/map_generation/resources/entrancezone/entrancezone.tres" id="2_38caj"]
+[ext_resource type="Script" uid="uid://bpokrsvfxavuh" path="res://scripts/team_manager/team_spawn.gd" id="3_iawyy"]
+[ext_resource type="Script" uid="uid://b72rylwwv8tij" path="res://scripts/team_manager/team.gd" id="4_8e0ju"]
+[ext_resource type="Script" uid="uid://d2ekngh4kwu7" path="res://scripts/round_system/round_settings.gd" id="4_38caj"]
+[ext_resource type="Resource" uid="uid://dxwc46fcm2xf7" path="res://scripts/team_manager/resources/spectator.tres" id="5_dvxgj"]
+[ext_resource type="Resource" uid="uid://co6vy7ywlhhcc" path="res://scripts/team_manager/resources/classd.tres" id="6_wgxd3"]
+
+[resource]
+script = ExtResource("4_38caj")
+containment_zones = Array[ExtResource("1_abspu")]([ExtResource("2_38caj")])
+teams = Array[ExtResource("4_8e0ju")]([ExtResource("5_dvxgj"), ExtResource("6_wgxd3")])
+metadata/_custom_type_script = "uid://d2ekngh4kwu7"

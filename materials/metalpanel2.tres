@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cyu0f24h5si7a"]
+
+[ext_resource type="Texture2D" uid="uid://dlqk4wbgmk8uo" path="res://materials/textures/metalpanels.jpg" id="1_1relw"]
+[ext_resource type="Texture2D" uid="uid://dgfmxsi20b0n5" path="res://materials/textures/metalpanelsbump.jpg" id="2_n4lvd"]
+
+[resource]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_1relw")
+normal_enabled = true
+normal_texture = ExtResource("2_n4lvd")

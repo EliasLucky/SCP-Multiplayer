@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Team" format=3 uid="uid://dxwc46fcm2xf7"]
+
+[ext_resource type="Script" uid="uid://boxa8roeiddpp" path="res://scripts/ability.gd" id="1_ltokn"]
+[ext_resource type="Script" uid="uid://ctnj7wkl8bid5" path="res://scripts/team_manager/team_class.gd" id="2_mriy2"]
+[ext_resource type="Script" uid="uid://b72rylwwv8tij" path="res://scripts/team_manager/team.gd" id="3_myxip"]
+[ext_resource type="Script" uid="uid://b7aal61pge44u" path="res://scripts/item_data.gd" id="4_rm862"]
+[ext_resource type="Script" uid="uid://daydd8fgncom3" path="res://scripts/team_manager/progression_rank.gd" id="5_6brx8"]
+
+[resource]
+script = ExtResource("3_myxip")
+team_name = "Spectator"

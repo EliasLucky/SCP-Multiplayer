@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxnd7xtput50u"
+path="res://.godot/imported/blackout done.mp3-b13d61828230f2be14b59fff4c4e431e.mp3str"
+
+[deps]
+
+source_file="res://blackout done.mp3"
+dest_files=["res://.godot/imported/blackout done.mp3-b13d61828230f2be14b59fff4c4e431e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
