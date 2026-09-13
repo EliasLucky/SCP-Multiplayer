@@ -25,7 +25,7 @@ Then apply it to `RoundSettings` as a Containment Zone.
 
 ## Documentation
 
-Full documentation for this project is available in (docs/)[docs/] directory.
+Full documentation for this project is available in [docs/](docs/) directory.
 
 # Contribution
 
